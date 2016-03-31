@@ -1,0 +1,25 @@
+{
+ "component": {
+    "kind": "component",
+    "scheme": "broker",
+    "syntax": "broker:destination",
+    "title": "Broker",
+    "description": "The Broker Camel component allows to use Camel routing to move messages through the broker.",
+    "label": "messaging",
+    "javaType": "org.apache.activemq.camel.component.broker.BrokerComponent",
+    "groupId": "org.apache.activemq",
+    "artifactId": "activemq-camel",
+    "version": "5.13.2"
+  },
+  "componentProperties": {
+  },
+  "properties": {
+    "destination": { "kind": "path", "group": "common", "required": "true", "type": "string", "javaType": "java.lang.String", "deprecated": "false", "description": "The name of the JMS destination" },
+    "brokerName": { "kind": "parameter", "group": "common", "type": "string", "javaType": "java.lang.String", "deprecated": "false", "description": "Name of the broker" },
+    "bridgeErrorHandler": { "kind": "parameter", "group": "consumer", "label": "consumer", "type": "boolean", "javaType": "boolean", "optionalPrefix": "consumer.", "deprecated": "false", "defaultValue": "false", "description": "Allows for bridging the consumer to the Camel routing Error Handler which mean any exceptions occurred while the consumer is trying to pickup incoming messages or the likes will now be processed as a message and handled by the routing Error Handler. By default the consumer will use the org.apache.camel.spi.ExceptionHandler to deal with exceptions that will be logged at WARN/ERROR level and ignored." },
+    "exceptionHandler": { "kind": "parameter", "group": "consumer (advanced)", "label": "consumer,advanced", "type": "object", "javaType": "org.apache.camel.spi.ExceptionHandler", "optionalPrefix": "consumer.", "deprecated": "false", "description": "To let the consumer use a custom ExceptionHandler. Notice if the option bridgeErrorHandler is enabled then this options is not in use. By default the consumer will deal with exceptions that will be logged at WARN/ERROR level and ignored." },
+    "exchangePattern": { "kind": "parameter", "group": "advanced", "label": "advanced", "type": "string", "javaType": "org.apache.camel.ExchangePattern", "enum": [ "InOnly", "RobustInOnly", "InOut", "InOptionalOut", "OutOnly", "RobustOutOnly", "OutIn", "OutOptionalIn" ], "deprecated": "false", "defaultValue": "InOnly", "description": "Sets the default exchange pattern when creating an exchange" },
+    "synchronous": { "kind": "parameter", "group": "advanced", "label": "advanced", "type": "boolean", "javaType": "boolean", "deprecated": "false", "defaultValue": "false", "description": "Sets whether synchronous processing should be strictly used or Camel is allowed to use asynchronous processing (if supported)." }
+  }
+}
+

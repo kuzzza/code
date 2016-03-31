@@ -1,0 +1,86 @@
+<html>
+<header>
+<title>Broker</title>
+</header>
+<body>
+<h1>Broker</h1>
+<b>Scheme:</b> broker<br/>
+<b>Syntax:</b> broker:destination<br/>
+<b>Description:</b> The Broker Camel component allows to use Camel routing to move messages through the broker.<br/>
+<b>Maven:</b> org.apache.activemq/activemq-camel/5.13.2<br/>
+<table class='table'>
+  <tr>
+    <th align="left">Name</th>
+    <th align="left">Kind</th>
+    <th align="left">Group</th>
+    <th align="left">Required</th>
+    <th align="left">Default</th>
+    <th align="left">Type</th>
+    <th align="left">Enum</th>
+    <th align="left">Description</th>
+  </tr>
+  <tr>
+    <td>destination</td>
+    <td>path</td>
+    <td>common</td>
+    <td>true</td>
+    <td></td>
+    <td>java.lang.String</td>
+    <td></td>
+    <td> The name of the JMS destination
+</td>
+  </tr>
+  <tr>
+    <td>brokerName</td>
+    <td>parameter</td>
+    <td>common</td>
+    <td></td>
+    <td></td>
+    <td>java.lang.String</td>
+    <td></td>
+    <td>Name of the broker</td>
+  </tr>
+  <tr>
+    <td>bridgeErrorHandler</td>
+    <td>parameter</td>
+    <td>consumer</td>
+    <td></td>
+    <td></td>
+    <td>boolean</td>
+    <td></td>
+    <td>Allows for bridging the consumer to the Camel routing Error Handler, which mean any exceptions occurred while the consumer is trying to pickup incoming messages, or the likes, will now be processed as a message and handled by the routing Error Handler. By default the consumer will use the org.apache.camel.spi.ExceptionHandler to deal with exceptions, that will be logged at WARN/ERROR level and ignored.</td>
+  </tr>
+  <tr>
+    <td>exceptionHandler</td>
+    <td>parameter</td>
+    <td>consumer (advanced)</td>
+    <td></td>
+    <td></td>
+    <td>org.apache.camel.spi.ExceptionHandler</td>
+    <td></td>
+    <td>To let the consumer use a custom ExceptionHandler. Notice if the option bridgeErrorHandler is enabled then this options is not in use. By default the consumer will deal with exceptions, that will be logged at WARN/ERROR level and ignored.</td>
+  </tr>
+  <tr>
+    <td>exchangePattern</td>
+    <td>parameter</td>
+    <td>advanced</td>
+    <td></td>
+    <td>InOnly</td>
+    <td>org.apache.camel.ExchangePattern</td>
+    <td>InOnly<br/>RobustInOnly<br/>InOut<br/>InOptionalOut<br/>OutOnly<br/>RobustOutOnly<br/>OutIn<br/>OutOptionalIn</td>
+    <td>Sets the default exchange pattern when creating an exchange</td>
+  </tr>
+  <tr>
+    <td>synchronous</td>
+    <td>parameter</td>
+    <td>advanced</td>
+    <td></td>
+    <td>false</td>
+    <td>boolean</td>
+    <td></td>
+    <td>Sets whether synchronous processing should be strictly used, or Camel is allowed to use asynchronous processing (if supported).</td>
+  </tr>
+</table>
+<h2>broker consumer</h2>
+</body>
+</html>
