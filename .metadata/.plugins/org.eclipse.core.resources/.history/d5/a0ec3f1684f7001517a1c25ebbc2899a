@@ -1,0 +1,28 @@
+package com.cooksys.jms;
+
+import java.util.Map;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+
+	 public static void main(String[] args) {
+
+	  ApplicationContext context = new ClassPathXmlApplicationContext("spring-beans.xml");
+
+	  MessageSender messageSender = (MessageSender) context.getBean("messageSender");
+
+	  Map message = new HashMap();
+	  message.put("Hello", "World");
+	  message.put("country", "India");
+	  message.put("state", "Maharashtra");
+	  message.put("city", "Pune");
+
+	  messageSender.send(message);
+	  
+	  System.out.println("Message Send to Jms Queue:- " + message) ;
+
+	 }
+
+	}

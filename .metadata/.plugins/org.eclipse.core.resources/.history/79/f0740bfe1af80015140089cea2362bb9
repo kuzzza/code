@@ -1,0 +1,28 @@
+package com.cooksys.jms;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+ 
+public class JMSCopierDemo
+{
+ 
+    @Test
+    public void testSendLocalFilesToJMSQueue()
+    {
+        JMSCopier copier = new JMSCopier();
+ 
+        String filePath = "c:\\Code";
+        String queueName = "copierQueue";
+ 
+        try
+        {
+            copier.sendFileToJMS(filePath, queueName);
+        }
+        catch (Exception e)
+        {
+            fail(e.getMessage());
+        }
+    }
+ 
+}

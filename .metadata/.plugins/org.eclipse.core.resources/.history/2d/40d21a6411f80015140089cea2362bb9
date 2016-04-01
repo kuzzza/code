@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.skills421.examples.camel</groupId>
+    <artifactId>CamelBasics</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+ 
+    <properties>
+
+ <slf4j.version>1.6.4</slf4j.version>
+
+ <logback.version>1.0.1</logback.version>
+
+</properties>
+
+<dependencies>
+ 
+
+ <dependency>
+
+  <groupId>org.slf4j</groupId>
+
+  <artifactId>slf4j-api</artifactId>
+
+  <version>${slf4j.version}</version>
+
+ </dependency>
+
+ <dependency>
+
+  <groupId>ch.qos.logback</groupId>
+
+  <artifactId>logback-classic</artifactId>
+
+  <version>${logback.version}</version>
+
+ </dependency>
+
+ <dependency>
+
+  <groupId>ch.qos.logback</groupId>
+
+  <artifactId>logback-core</artifactId>
+
+  <version>${logback.version}</version>
+
+ </dependency>
+
+
+ 
+        <!-- Core Camel -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-core</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+ 
+        <!-- Needed for the FTP Component -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-ftp</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+ 
+        <!-- Needed for com/jcraft/jsch/Logger - SFTP -->
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.42</version>
+        </dependency>
+        
+    
+        
+        
+ 
+        <!-- Needed for JMS -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jms</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+ 
+        <!-- Needed for ActiveMQ - JMS -->
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-core</artifactId>
+            <version>5.3.2</version>
+        </dependency>
+ 
+        <!-- JUnit for testing -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+ 
+    </dependencies>
+ 
+</project>

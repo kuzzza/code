@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/WildFly 9.x Runtime">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/8L21QX1/Downloads/spring-jms-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/8L21QX1/wildfly-9.0.2.Final/standalone/tmp/vfs/deployment/deploymentcf646dda5b4469cd/spring-context-4.1.2.RELEASE.jar-7e931522fd29862f/spring-context-4.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/8L21QX1/wildfly-9.0.2.Final/standalone/tmp/vfs/deployment/deploymentcf646dda5b4469cd/spring-core-4.1.2.RELEASE.jar-d110c033ce072302/spring-core-4.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/8L21QX1/Downloads/apache-activemq-4.1.1.jar/apache-activemq-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/8L21QX1/wildfly-9.0.2.Final/standalone/tmp/vfs/deployment/deploymentcf646dda5b4469cd/hibernate-core-4.0.0.Final.jar-7bf3af6922eaa2ef/hibernate-core-4.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/8L21QX1/Downloads/hibernate-validator-4.3.2.Final.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
